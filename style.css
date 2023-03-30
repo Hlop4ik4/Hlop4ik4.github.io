@@ -9,6 +9,7 @@
 	border: solid 1px red;
 	border-top: none;
 	border-left: none;
+	margin: 100px;
 }
 
 .heart:before, .heart:after {
