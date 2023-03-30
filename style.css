@@ -1,34 +1,23 @@
 .heart {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	-webkit-transform: rotate(45deg);  /* для Chrome и Safari */
-	-moz-transform: rotate(45deg); /* для Firefox */ 
-	-o-transform: rotate(45deg); /* для Opera */ 
-	transform: rotate(45deg);
-	border: solid 1px red;
-	border-top: none;
-	border-left: none;
-	margin: 100px;
+    width: 200px; 
+    height: 200px; 
+    background-color: red; 
+    transform: rotate(45deg);
+    position: relative; 
 }
 
-.heart:before, .heart:after {
-	position:absolute;
-	content: ' ';
-	-webkit-border-radius: 50px 0 0 50px;
-	-moz-border-radius: 50px 0 0 50px;
-	border-radius: 50px 0 0 50px;
-	width: 70px;
-	height: 100px;
-	border: solid 1px red;
-	border-right: none;
-	left:-70px;
+.heart::after {
+    content : ''; 
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%; 
+    position: absolute;
 }
-.heart:after {
-	position: absolute;
-	left: 15px;
-	top: -85px;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
+
+.heart::before {
+    top: -100px;
+    left: 0;
 }
+
